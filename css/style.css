@@ -55,6 +55,7 @@ footer {
   grid-column: span 3;
 }
 
+/* Smaller desktop */
 @media screen and (max-width: 1200px) {
   .box1,
   .box3 {
@@ -71,5 +72,32 @@ footer {
 
   .sidebar {
     grid-column: 9 / span 4;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 960px) {
+  main {
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .box1,
+  .box3,
+  .box2 {
+    grid-column: span 4;
+  }
+
+  .content,
+  .sidebar {
+    grid-column: span 6;
+  }
+
+  footer {
+    grid-column: 1 / span 12;
+    grid-row: 4 / span 2;
+  }
+
+  [class*="footer"] {
+    grid-column: span 6;
   }
 }
