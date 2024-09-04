@@ -54,3 +54,22 @@ footer {
   border: 2px solid black;
   grid-column: span 3;
 }
+
+@media screen and (max-width: 1200px) {
+  .box1,
+  .box3 {
+    grid-column: span 3;
+  }
+
+  .box2 {
+    grid-column: 4 / span 6;
+  }
+
+  .content {
+    grid-column: 1 / span 8;
+  }
+
+  .sidebar {
+    grid-column: 9 / span 4;
+  }
+}
