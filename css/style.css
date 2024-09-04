@@ -101,3 +101,27 @@ footer {
     grid-column: span 6;
   }
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-rows: repeat(10, 100px);
+  }
+
+  .box1,
+  .box3,
+  .box2,
+  .content,
+  .sidebar {
+    grid-column: span 12;
+  }
+
+  footer {
+    grid-column: 1 / span 12;
+    grid-row: 7 / span 4;
+  }
+
+  [class*="footer"] {
+    grid-column: span 12;
+  }
+}
